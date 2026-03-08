@@ -1,0 +1,16 @@
+{
+  "name": "bismillah-mattress-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Bismillah Mattress Store",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js",
+    "migrate": "node migrate.js",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": ["inventory", "pos", "api"],
+  "author": "",
+  "license": "MIT"
+}
