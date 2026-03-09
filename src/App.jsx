@@ -902,8 +902,8 @@ const BismillahCompleteOS = () => {
             <p className="text-slate-400">Enterprise Operating System</p>
           </div>
           <form onSubmit={handleLogin} className="space-y-6">
-            <div><label className="text-slate-300 text-sm font-bold mb-2 block">Email</label><input type="email" value={loginEmail} onChange={(e) => setLoginEmail(e.target.value)} className="w-full bg-slate-700 text-white p-3 rounded-lg" placeholder="admin@bismillah.pk"/></div>
-            <div><label className="text-slate-300 text-sm font-bold mb-2 block">Password</label><input type="password" value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} className="w-full bg-slate-700 text-white p-3 rounded-lg" placeholder="admin123"/></div>
+            <div><label className="text-slate-300 text-sm font-bold mb-2 block">Email</label><input type="email" value={loginEmail} onChange={(e) => setLoginEmail(e.target.value)} className="w-full bg-slate-700 text-white p-3 rounded-lg" placeholder="admin@email.com"/></div>
+            <div><label className="text-slate-300 text-sm font-bold mb-2 block">Password</label><input type="password" value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} className="w-full bg-slate-700 text-white p-3 rounded-lg" placeholder="Password123"/></div>
             {loginError && <div className="text-red-400 text-sm">{loginError}</div>}
             <button type="submit" disabled={isLoading} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg">{isLoading ? 'Authenticating...' : 'Login'}</button>
           </form>
